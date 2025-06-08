@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom'; // Import useLocation
+import { Routes, Route, useLocation } from 'react-router-dom'; 
 
 import HomePage from './pages/HomePage/HomePage.jsx';
 import DestinationsPage from './pages/DestinationPage/DestinationsPage.jsx';
@@ -12,12 +12,11 @@ import './index.css';
 import './App.css';
 
 function App() {
-  const location = useLocation(); // Get the current location object
+  const location = useLocation(); 
 
   useEffect(() => {
-    // Scroll to the top of the page whenever the pathname changes (i.e., on navigation)
     window.scrollTo(0, 0);
-  }, [location.pathname]); // Dependency array: run this effect when location.pathname changes
+  }, [location.pathname]); 
 
   return (
     <Routes>
