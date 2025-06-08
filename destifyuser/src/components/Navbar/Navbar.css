@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Keep this as it is for internal Navbar padding */
+  padding: 1rem 2rem; 
   background-color: #fff;
 }
 .navbar-brand {
