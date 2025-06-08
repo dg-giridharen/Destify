@@ -1,4 +1,3 @@
-// src/pages/YourTripsPage/YourTripsPage.jsx
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
@@ -9,7 +8,6 @@ const YourTripsPage = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    // Apply the new 'page-wrapper' class here
     <div className="page-wrapper">
       <Navbar onLoginClick={() => setIsModalOpen(true)} />
       <main className="container">
