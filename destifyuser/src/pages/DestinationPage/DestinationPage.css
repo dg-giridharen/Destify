@@ -1,4 +1,3 @@
-/* src/pages/DestinationPage/DestinationPage.css */
 .filter-container {
   display: flex;
   justify-content: center;
@@ -33,24 +32,22 @@
   padding: 2rem;
 }
 
-/* New styles for displaying 3 packages in a row */
 .destination-packages-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
-  gap: 2rem; /* Gap between cards */
-  text-align: center; /* Center content within grid items */
-  margin-top: 3rem; /* Add some top margin to separate from filter */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  text-align: center;
+  margin-top: 3rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .destination-packages-grid {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
   .destination-packages-grid {
-    grid-template-columns: 1fr; /* 1 column on small screens */
+    grid-template-columns: 1fr;
   }
 }
