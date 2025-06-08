@@ -1,0 +1,115 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Keep this as it is for internal Navbar padding */
+  background-color: #fff;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  text-decoration: none;
+  font-family: 'Playfair Display', serif;
+}
+
+.logo-image {
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-right-section {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.navbar-trips-link {
+  text-decoration: none;
+  color: #4a5568;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+}
+
+.navbar-trips-link:hover {
+  color: #ff6f61;
+}
+
+.login-button {
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  font-family: 'Playfair Display', serif;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.login-button:hover {
+  background-color: #e66054;
+  transform: translateY(-1px);
+}
+
+.user-profile {
+  position: relative;
+}
+
+.user-profile-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.arrow-down {
+  font-size: 0.7rem;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  z-index: 1100;
+  width: 150px;
+}
+
+.dropdown-menu button {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-family: 'Playfair Display', serif;
+}
+
+.dropdown-menu button:hover {
+  background-color: #f4f4f4;
+}

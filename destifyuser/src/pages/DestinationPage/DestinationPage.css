@@ -1,0 +1,56 @@
+/* src/pages/DestinationPage/DestinationPage.css */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.destination-select {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  min-width: 250px;
+}
+
+.search-button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.not-found-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  padding: 2rem;
+}
+
+/* New styles for displaying 3 packages in a row */
+.destination-packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  gap: 2rem; /* Gap between cards */
+  text-align: center; /* Center content within grid items */
+  margin-top: 3rem; /* Add some top margin to separate from filter */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .destination-packages-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .destination-packages-grid {
+    grid-template-columns: 1fr; /* 1 column on small screens */
+  }
+}
