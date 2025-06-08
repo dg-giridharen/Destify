@@ -1,4 +1,3 @@
-// src/pages/DestinationPage/DestinationsPage.jsx
 import React, { useState, useEffect } from 'react';
 import Navbar from '../../components/Navbar/Navbar.jsx';
 import Footer from '../../components/Footer/Footer.jsx';
@@ -42,7 +41,7 @@ const DestinationsPage = () => {
             ))}
           </select>
         </div>
-        {/* Changed className from "team-members" to "destination-packages-grid" */}
+        {}
         <div className="destination-packages-grid">
           {filteredPackages.length > 0 ? (
             filteredPackages.map((pkg) => (
