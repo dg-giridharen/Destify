@@ -2,9 +2,9 @@
 
 Destify is a modern, feature-rich frontend application for a travel booking website. This project was built using React and Vite to demonstrate key concepts in modern web development, including component-based architecture, routing, state management, and responsive design.
 The repository contains two separate projects: a user-facing application and an admin dashboard.
-(Optional: Add a screenshot of your beautiful homepage here!)
-![Destify Homepage](./destify-homepage.png)
+
 Features
+
 👤 User Application (destifyuser)
  * Modern Homepage: A clean, responsive homepage featuring a main headline and an auto-scrolling carousel for "Featured Destinations".
  * Multi-Page Navigation: Seamless client-side routing between all pages (Home, Destinations, About Us, Contact Us, etc.) using react-router-dom.
@@ -12,12 +12,14 @@ Features
  * Dynamic Cart Page: A detailed cart page that displays information for a specific package selected by the user, including a full price breakdown.
  * Authentication Flow (UI): A reusable authentication modal that handles both Login and Sign Up views. The navbar dynamically changes to show the user's email and a logout option upon "login".
  * Component-Based Structure: The entire application is broken down into small, reusable, and organized components, each with its own dedicated stylesheet.
+
 ⚙️ Admin Panel (admin)
  * Separate Admin Dashboard: A dedicated application for managing the website's content.
  * Sidebar Navigation: A classic dashboard layout with sidebar navigation for different management pages.
  * Package Management Table: A page that displays all available travel packages in a clean, organized table.
  * Interactive Actions (Simulated): The table includes functional "Edit" and "Delete" buttons that simulate backend actions by showing alerts and updating the UI state.
  * Add Package Form: A complete form for adding new travel packages to the system (submission is simulated).
+
 Tech Stack
  * Framework: React
  * Build Tool: Vite
@@ -27,6 +29,7 @@ Tech Stack
  * State Management: React Hooks (useState) & Context API (useContext)
 How to Run Locally
 This repository contains two separate projects. You will need to run them in two separate terminals.
+
 Prerequisites
  * Node.js (v18 or higher recommended)
  * npm (or yarn/pnpm)
