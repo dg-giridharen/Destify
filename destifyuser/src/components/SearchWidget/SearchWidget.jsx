@@ -6,7 +6,7 @@ const SearchWidget = () => {
     <div className="search-widget">
       <div className="search-tabs">
         <button className="tab-button active">✈️ Flights</button>
-        {/* Add other tabs if needed, e.g., <button className="tab-button">🏨 Hotels</button> */}
+        {}
       </div>
       <div className="search-inputs">
         <div className="input-group">
