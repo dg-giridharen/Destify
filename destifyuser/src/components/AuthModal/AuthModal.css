@@ -1,4 +1,3 @@
-/* src/components/AuthModal/AuthModal.css */
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -29,7 +28,7 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #000000; /* Ensuring close button is black as in image */
+  color: #000000;
   cursor: pointer;
 }
 
@@ -45,7 +44,7 @@
 .login-form label {
   display: block;
   margin-bottom: 0.5rem;
-  font-size: 0.9rem; /* Slightly smaller label font as in image */
+  font-size: 0.9rem;
   color: #555;
 }
 
@@ -55,13 +54,13 @@
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  font-size: 1rem; /* Consistent input font size */
+  font-size: 1rem;
 }
 
 .submit-button {
   width: 100%;
   padding: 0.75rem;
-  background-color: #4267B2; /* Blue color from image */
+  background-color: #4267B2;
   color: white;
   border: none;
   border-radius: 4px;
@@ -70,48 +69,48 @@
   transition: background-color 0.3s;
 }
 
-.submit-button:hover:not(:disabled) { /* Hover effect only when not disabled */
-  background-color: #365899; /* Darker blue on hover */
+.submit-button:hover:not(:disabled) {
+  background-color: #365899;
 }
 
-.submit-button:disabled { /* Styling for disabled state */
-  background-color: #a0a0a0; /* Grey when disabled */
+.submit-button:disabled {
+  background-color: #a0a0a0;
   cursor: not-allowed;
   opacity: 0.7;
 }
 
 .terms-group {
   display: flex;
-  align-items: flex-start; /* Align checkbox to the top of the line */
+  align-items: flex-start;
   gap: 0.5rem;
   font-size: 0.9rem;
   color: #666;
-  margin-top: 1.5rem; /* Add some space above terms */
+  margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
 .terms-group input[type="checkbox"] {
-  flex-shrink: 0; /* Prevent checkbox from shrinking */
-  width: 18px; /* Standard checkbox size */
+  flex-shrink: 0;
+  width: 18px;
   height: 18px;
-  margin-top: 2px; /* Small adjustment for vertical alignment with text */
+  margin-top: 2px;
 }
 
 .terms-group label {
-  display: inline; /* Keep label text inline with checkbox */
+  display: inline;
   margin-bottom: 0;
-  line-height: 1.3; /* Adjust line height for better appearance */
+  line-height: 1.3;
 }
 
 .auth-toggle-link {
   text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
-  color: #666; /* Match color in image */
+  color: #666;
 }
 
 .auth-toggle-link a {
-  color: #4267B2; /* Match link color to button blue */
+  color: #4267B2;
   font-weight: bold;
   text-decoration: none;
 }
