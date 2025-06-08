@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import Navbar from '../../components/Navbar/Navbar.jsx'; // Corrected import path
+import Navbar from '../../components/Navbar/Navbar.jsx'; 
 import Footer from '../../components/Footer/Footer.jsx';
 import AuthModal from '../../components/AuthModal/AuthModal.jsx';
 import { travelPackages } from '../../data.js';
@@ -41,19 +41,19 @@ const CartPage = () => {
             <div className="price-table">
               <div className="price-row">
                 <span>Package Price</span>
-                <span>₹{basePrice.toLocaleString()}</span> {/* Corrected currency symbol */}
+                <span>₹{basePrice.toLocaleString()}</span> {}
               </div>
               <div className="price-row">
                 <span>Taxes (18%)</span>
-                <span>₹{taxAmount.toLocaleString()}</span> {/* Corrected currency symbol */}
+                <span>₹{taxAmount.toLocaleString()}</span> {}
               </div>
               <div className="price-row">
                 <span>Processing Fee (2%)</span>
-                <span>₹{processingFee.toLocaleString()}</span> {/* Corrected currency symbol */}
+                <span>₹{processingFee.toLocaleString()}</span> {}
               </div>
               <div className="price-row total-row">
                 <span>Total Amount</span>
-                <span>₹{totalPrice.toLocaleString()}</span> {/* Corrected currency symbol */}
+                <span>₹{totalPrice.toLocaleString()}</span> {}
               </div>
             </div>
             <button className="checkout-button">Proceed to Checkout</button>
