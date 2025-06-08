@@ -2,14 +2,13 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useAuth } from '../../context/AuthContext';
 import { weblogo } from '../../assets/asset.js';
-import './Navbar.css'; // 1. Change the CSS import
+import './Navbar.css'; 
 
 const Navbar = ({ onLoginClick }) => {
   const { currentUser, logout } = useAuth();
   const [isDropdownOpen, setDropdownOpen] = useState(false);
 
   return (
-    // 2. Change all classNames back to simple strings
     <nav className="navbar">
       <Link to="/" className="navbar-brand">
         <img src={weblogo} alt="Destify Logo" className="logo-image" />
