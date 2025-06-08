@@ -1,8 +1,7 @@
-/* src/components/Footer/Footer.css */
 .site-footer {
   background-color: #181717;
   color: #bdc3c7;
-  padding: 30px 0; /* Vertical padding */
+  padding: 30px 0; 
   margin-top: 4rem;
   border-top-left-radius: 24px;
   border-top-right-radius: 24px;
@@ -10,7 +9,7 @@
 
 .footer-content {
   margin: auto;
-  padding: 0 2rem; /* Horizontal padding for the content inside the footer */
+  padding: 0 2rem; 
   display: flex;
   justify-content: space-between;
   gap: 2rem;
