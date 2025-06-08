@@ -1,0 +1,107 @@
+.hero-container {
+  text-align: center;
+  background-color: #fff;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 90%;
+  max-width: 1200px;
+  max-height: 60vh;
+  overflow: hidden;
+  margin: 0 auto 2rem auto;
+  border-radius: 24px;
+
+  /* Use flexbox for vertical stacking of headline and button */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  padding: 2rem; /* Add some padding to prevent content from touching edges */
+  box-sizing: border-box; /* Include padding in element's total width/height */
+}
+
+.main-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1.5rem; /* Add margin below headline to push button down */
+  position: static; /* Remove absolute positioning */
+  transform: none; /* Remove transform */
+  z-index: 10;
+  width: 80%;
+  max-width: 700px;
+  text-align: center; /* Ensure text is centered */
+}
+
+.explore-button {
+  position: static; /* Remove absolute positioning */
+  transform: none; /* Remove transform */
+  z-index: 10;
+  padding: 12px 24px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.explore-button:hover {
+  background-color: #e66054;
+}
+
+.hero-image {
+  position: absolute; /* Position image absolutely to act as a background */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Place image behind headline and button */
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .main-headline {
+    font-size: 3rem;
+    margin-bottom: 1rem; /* Adjust margin for smaller screens */
+  }
+  .explore-button {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image-container {
+    padding: 1.5rem; /* Reduce padding on smaller screens */
+  }
+  .main-headline {
+    font-size: 2.2rem;
+    margin-bottom: 0.8rem;
+  }
+  .explore-button {
+    font-size: 0.85rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-image-container {
+    padding: 1rem; /* Further reduce padding on very small screens */
+  }
+  .main-headline {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .explore-button {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
